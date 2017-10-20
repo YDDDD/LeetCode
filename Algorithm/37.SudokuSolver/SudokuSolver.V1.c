@@ -1,3 +1,4 @@
+//Runtime: 3 ms
 bool push(char** board, int rowIndex, int colIndex, int usedH[9][9], int usedV[9][9], int usedRect[9][9]) {
 
 	if (rowIndex == 9)
