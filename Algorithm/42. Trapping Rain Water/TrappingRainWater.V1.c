@@ -1,5 +1,5 @@
-//Runtime 12ms
-//Beats 12%   T_T  DO BETTER AT V2
+//Runtime 6ms
+//Beats 51.11%
 
 void Search(int *height, int start, int from, int maxofOtherSide, int* ret) {
 	if ((from == -1 && start < 0) || (from != 0 && start == from)) return;
