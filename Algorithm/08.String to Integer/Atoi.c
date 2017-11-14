@@ -1,3 +1,6 @@
+//Runtime:Runtime: 16 ms
+//Beats 64.61%
+
 int myAtoi(char* str) {
     int value = 0, sign = 1;
     while(*str == ' ') str++;
