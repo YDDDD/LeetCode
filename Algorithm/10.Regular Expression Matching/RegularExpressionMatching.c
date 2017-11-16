@@ -1,3 +1,5 @@
+//Runtime: 18 ms
+
 bool isMatch(char* s, char* p) {
     if(*s == '\0') {
         if(*p == '\0') {
