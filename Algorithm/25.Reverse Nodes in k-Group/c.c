@@ -1,3 +1,11 @@
+//Runtime:6ms
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
+
+
 struct ListNode* reverseKGroup(struct ListNode* head, int k) {
     struct ListNode *stack[10000] = {};
     struct ListNode *previous = NULL, *point = head;
