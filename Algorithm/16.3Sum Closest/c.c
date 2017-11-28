@@ -3,49 +3,23 @@ int Partition(int *arr, int start, int end);
 
 void QuickSort(int *arr, int start, int end)
 {
-    if (start == end)
-    {
-        return;
-    }
-    
+    if (start == end) return;    
     int index = Partition(arr, start, end);
-    if (index > start)
-    {
-        QuickSort(arr, start, index);
-    }
-    
-    if (index < end)
-    {
-        QuickSort(arr, index + 1, end);
-    }
+    if (index > start) QuickSort(arr, start, index);    
+    if (index < end) QuickSort(arr, index + 1, end);
 }
 
 int Partition(int *arr, int start, int end)
 {
     int i = start, j = end, x = arr[start];
-    
     while (i < j)
     {
-        while (i < j && arr[j] >= x)
-        {
-            j--;
-        }
-        if (i < j)
-        {
-            arr[i++] = arr[j];
-        }
-        
-        while (i < j && arr[i] < x)
-        {
-            i++;
-        }
-        if (i < j)
-        {
-            arr[j--] = arr[i];
-        }
+        while (i < j && arr[j] >= x) j--;
+        if (i < j) arr[i++] = arr[j];        
+        while (i < j && arr[i] < x) i++;
+        if (i < j) arr[j--] = arr[i];
     }
-    arr[i] = x;
-    
+    arr[i] = x;    
     return i;
 }
 
