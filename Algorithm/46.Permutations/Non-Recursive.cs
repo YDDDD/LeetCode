@@ -1,3 +1,7 @@
+//Runtime: 498 ms
+//Beat 85.64%
+//Also apply for 47.Permutations II
+
 public class Solution
 {
     public IList<IList<int>> Permute(int[] nums)
