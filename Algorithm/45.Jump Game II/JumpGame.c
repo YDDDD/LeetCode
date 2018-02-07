@@ -1,4 +1,4 @@
-//Runtime: 6 ms
+//Runtime: 9 ms
 
 int youngJump(int* nums, int numsSize, int depth, int* nodeDic, int* minStep) {
 	if (*nodeDic == 0 || *nodeDic > depth) *nodeDic = depth;
